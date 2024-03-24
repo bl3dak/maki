@@ -1,0 +1,160 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    overflow: scroll;
+}
+
+@font-face {
+    font-family: Akira;
+    src: url(../fonts/Akira.otf);
+}
+
+@font-face {
+    font-family: Coolvetica;
+    src: url(../fonts/Coolvetica.otf);
+}
+
+@font-face {
+    font-family: Nexa;
+    src: url(../fonts/Nexa.ttf);
+}
+
+@font-face {
+    font-family: Milker;
+    src: url(../fonts/Milker.otf);
+}
+
+@keyframes fadeInDrop {
+    0% {opacity: 0%; top: -50px;}
+    100% {opacity: 100%; top: 0px;}
+}
+
+@keyframes fadeInRise {
+    0% {opacity: 0%; top: 50px;}
+    100% {opacity: 100%; top: 0px;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+.homeNavbar {
+    position: relative;
+    height: 80px;
+    background-color: #000000;
+    
+}
+
+.homeNavbar img {
+    position:absolute;
+    width: 110px;
+    height: 90px;
+    bottom: -3.5px;
+    left: 15px;
+    opacity: 0%;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.homeNavbar ul {
+    position: absolute;
+    margin-top: 20.5px;
+    margin-left: 1105px;
+    color: #fff;
+    font-family: Nexa;
+    text-transform: uppercase;
+    font-weight: 0;
+    font-size: 25px;
+    list-style-type: none;
+    display: flex;
+    gap: 45px;
+    opacity: 0;
+    animation: fadeIn 2.5s ease forwards;
+}
+
+.homeNavbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.homeNavbar ul li {
+    text-decoration: none;
+    transition: 0.5s;
+    color: #e20000;
+}
+
+.mainBanner {
+    height: 805px; 
+    background-image: url(../images/restaurant/mainBanner.jpeg);
+    filter: brightness(0.5);
+    filter: blur(0.1);
+    scroll-behavior:smooth;
+}
+
+.content {
+    position: relative;
+    height: 1600px;
+    background-image: linear-gradient(180deg, #000000, #571209);
+    overflow: visible;
+    scroll-behavior:smooth;
+    filter: brightness(0.9);
+}
+
+.content h1 {
+    position: absolute;
+    margin-left: 268px;
+    margin-top: 100px;
+    color: #fff;
+    opacity: 0%;
+    font-weight: 600;
+    font-size: 50px;
+    font-family: Akira;
+    animation: fadeInRise 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.content .img1 {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 260px;
+    width: 30%;
+    opacity: 0%;
+    animation: fadeInRise 1s ease forwards;
+    animation-delay: 1s;
+    border-radius: 14px;
+}
+
+.content .firstDescription {
+    position: absolute;
+    color: #fff;
+    font-family: Nexa;
+    margin-top: 570px;
+    margin-left: 482px;
+    opacity: 0%;
+    animation: fadeInRise 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.content .img2 {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 1050px;
+    width: 30%;
+    opacity: 0%;
+    animation: fadeInRise 1s ease forwards;
+    animation-delay: 1s;
+    border-radius: 14px;
+}
+
+.content .secondDescription {
+    position: absolute;
+    color: #fff;
+    font-family: Nexa;
+    margin-top: 570px;
+    margin-left: 1265px;
+    opacity: 0%;
+    animation: fadeInRise 1s ease forwards;
+    animation-delay: 1s;
+}
+
